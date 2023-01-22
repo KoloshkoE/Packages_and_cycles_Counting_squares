@@ -2,14 +2,14 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public int calcSqrt(int x, int y) {
-        int q = 0;
+    public int calcSqrt(int bline, int tline) {
+        int squares = 0;
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= x && i * i <= y) {
-                q = q + 1;
+            if (i * i >= bline && i * i <= tline) {
+                squares = squares + 1;
             }
         }
-        return q;
+        return squares;
     }
 }
 
